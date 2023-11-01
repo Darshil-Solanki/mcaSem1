@@ -3,13 +3,10 @@ int maxMin(int arr[],int flag){
 	int i,m;
 	m=arr[0];
 	for(i=0;i<10;i++){
-		if(flag){
-			if(arr[i]>m)
-				m=arr[i];
-		}
+		if(flag)
+			if(arr[i]>m) m=arr[i];
 		else
-			if(arr[i]<m)
-				m=arr[i];
+			if(arr[i]<m) m=arr[i];
 	}
 	return m;
 }

@@ -35,7 +35,7 @@ void main(){
 		printf("Enter a Number:");
 		scanf("%d",&arr[i]);
 	}
-	sort(arr,1)//sort in ascending 
+	sort(arr,1);//sort in ascending 
 	printf("Array in ascending:\n");
 	printArray(arr);
 	sort(arr,0);//sort in descending 
