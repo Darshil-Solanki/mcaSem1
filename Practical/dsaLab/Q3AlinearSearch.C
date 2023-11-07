@@ -1,5 +1,5 @@
 #include <stdio.h>
-	int i;
+int i;
 void linearSearch(int arr[]){
 	int temp,flag=1;
 	printf("Enter item to search:\n");

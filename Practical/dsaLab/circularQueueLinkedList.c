@@ -75,8 +75,8 @@ void printQueue(){
 }
 void main(){
 	int data;
-	int choice=0;
-	while(choice!=8){
+	int choice;
+	while(1){
 		printf("Enter your choice:\n");
 		printf("1 : Check Queue it is empty or not.\n");
 		printf("2 : Peek Element.\n");
@@ -105,7 +105,6 @@ void main(){
 				break;
 			case 6:
 				exit(0);
-				break;
 			default:
 				printf("Invalid Choice!!!\n");
 				getch();

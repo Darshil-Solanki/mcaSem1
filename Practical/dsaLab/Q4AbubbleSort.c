@@ -21,7 +21,7 @@ void main(){
 	bubbleSort(arr);
 	printf("Sorted array is: ");
 	for(i=0;i<10;i++){
-		printf("%d ",arr[i])
+		printf("%d ",arr[i]);
 	}
 	getch();
 }

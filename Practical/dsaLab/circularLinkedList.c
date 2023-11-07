@@ -183,8 +183,8 @@ int isEmpty(){
 		return 0;
 }
 void main(){
-	int choice=1,data,pos;
-	while(choice!=8){
+	int choice,data,pos;
+	while(1){
 		printf("Enter your choice:\n");
 		printf("1 : insert at beg\n");
 		printf("2 : insert at end\n");
@@ -243,7 +243,6 @@ void main(){
 				break;
 			case 8:
 				exit(0);
-				break;
 			default:
 				printf("Invalid Choice!!!\n");
 				getch();
