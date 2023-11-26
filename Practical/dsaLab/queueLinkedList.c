@@ -27,7 +27,7 @@ void enqueue(){
 		temp->data=data;
 		temp->next=NULL;
 		if(isEmpty())
-			front=rear=temp;
+			front=temp;
 		else
 			rear->next=temp;
 		rear=temp;
