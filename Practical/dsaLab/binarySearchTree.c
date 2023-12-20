@@ -26,7 +26,7 @@ struct Node* insert(struct Node* root, int key) {
     else if (key > root->data)
         root->right = insert(root->right, key);
 	else // Duplicate keys not allowed
-        printf(“Duplicate not allowed!!!\n”);
+        printf("Duplicate not allowed!!!\n");
     return root;
 }
 

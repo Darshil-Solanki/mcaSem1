@@ -9,9 +9,9 @@ void arrrev(int arr[],int revarr[],int n){
 }
 int main() {
     int arr[]={12,33,34,67,7,89,56},i,n;
+    int revarr[7];
 	clrscr();
-    n=sizeof(arr)/sizeof(arr[0]);
-    int revarr[n];
+    n=7;
     arrrev(arr,revarr,n);
     for(i=0;i<n;i++){
         printf("%d ",revarr[i]);

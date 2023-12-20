@@ -71,6 +71,7 @@ int getBalance(struct AVLNode* node) {
 
 // Function to insert a key into AVL tree
 struct AVLNode* insertAVL(struct AVLNode* node, int key) {
+    int balance;
     // Perform normal BST insertion
     if (node == NULL)
         return createAVLNode(key);
@@ -79,15 +80,16 @@ struct AVLNode* insertAVL(struct AVLNode* node, int key) {
         node->left = insertAVL(node->left, key);
     else if (key > node->data)
         node->right = insertAVL(node->right, key);
-    else // Duplicate keys not allowed
+    else{ // Duplicate keys not allowed
 		printf("Duplicate not allowed!!!\n");
         return node;
+    }
 
     // Update height of current node
     node->height = 1 + maximum(height(node->left), height(node->right));
 
     // Get the balance factor to check if this node became unbalanced
-    int balance = getBalance(node);
+    balance = getBalance(node);
 
     // Left Left Case
     if (balance > 1 && key < node->left->data)
